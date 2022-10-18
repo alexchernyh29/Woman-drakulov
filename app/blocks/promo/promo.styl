@@ -1,0 +1,97 @@
+.promo
+    background url('/images/promo-bg.jpg') no-repeat top center
+    background-size cover
+    position relative
+    padding w(150) w(50) w(75)
+    font-family $ff-vinque
+    height 100vh
+    +below(768px)
+        background-image url('/images/promo-bg-mobile.jpg')
+        padding wm(420) wm(0) wm(15)
+        height auto
+        min-height 100vh
+    
+    &__wrap
+        display flex
+        flex-flow column
+        justify-content space-between
+        align-items center
+        width 50%
+        height 100%
+        +below(768px)
+            width 100%
+            height 50%
+            padding-bottom wm(25)
+
+    &__content
+        text-align center
+        
+    &__title
+        font-size w(86)
+        line-height w(72)
+        color #FF2929
+        margin 0
+        +below(768px)
+            font-size wm(36)
+            line-height wm(38)
+
+    &__text
+        font-size w(24)
+        line-height w(30)
+        color #FFD8AB
+        padding w(50) w(80) w(50)
+        +below(768px)
+            font-size wm(13)
+            line-height wm(16)
+            padding wm(15) wm(16) wm(15)
+            text-align center
+
+    &__info
+        font-size w(32)
+        line-height w(30)
+        color #FFD8AB
+        +below(768px)
+            font-size wm(13)
+            line-height wm(16)
+            padding-bottom wm(10)
+
+    &__img
+        position absolute
+        left w(27)
+        bottom w(21px)
+        width w(70px)
+        height w(70px)
+        +below(768px)
+            width wm(48)
+            height wm(52)
+            left wm(8)
+            bottom wm(8)
+
+        img
+            width 100%
+
+    &__arrow
+        position absolute
+        left 50%
+        bottom w(75)
+        color #CF2920
+        transform translateX(-50%)
+        width w(26)
+        cursor pointer
+        transition opacity .3
+        +below(768px)
+            bottom wm(30)
+            width wm(20)
+
+
+        img
+            width 100%
+
+        &:hover
+            opacity .7
+    
+    &__sharing
+        margin-top w(15)
+        +below(736px)
+            margin-top wm(5)
+            margin-left wm(250)

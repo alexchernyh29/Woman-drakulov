@@ -1,0 +1,31 @@
+mixin test()
+
+    +b('section').test
+        +e.img
+            img(src=`/images/16+.png`)
+        +e.wrap
+            +e.head
+                +e.counter
+                    +e('p').counter-text <span>1</span>/7
+                +e('p').title Как узнать вампира в толпе?
+            +e('ul').list
+                +e('li').item(data-id='А')
+                    +e.sign
+                    +e.answer
+                        +e('p').answer-text Он всегда немного отстранен и задумчив.
+                +e('li').item(data-id='Б')
+                    +e.sign
+                    +e.answer
+                        +e('p').answer-text Он чертовски красив! 
+                +e('li').item(data-id='В')
+                    +e.sign
+                    +e.answer
+                        +e('p').answer-text Он смотрит на всех свысока.
+                 +e('li').item(data-id='Г')
+                    +e.sign
+                    +e.answer
+                        +e('p').answer-text Он аристократ.
+                +e('li').item(data-id='Д')
+                    +e.sign
+                    +e.answer
+                        +e('p').answer-text Никак, он может оказаться обычным парнем, с которым ты каждый день ездишь в лифте.

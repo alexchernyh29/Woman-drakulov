@@ -1,0 +1,25 @@
+extends /blocks/layout-default/layout-default
+include /blocks/test/test
+include /blocks/promo/promo
+include /blocks/result/result
+include /blocks/sharing/sharing
+
+block head
+	- var pageTitle = 'Project Template';
+
+block content
+	#fullpage
+		.section(data-anchor='1')
+			+promo()
+		.section(data-anchor='2')
+			+test()
+		#result.section(data-anchor='3')
+			+result()
+	.cache
+		img(src='./images/test-bg1.jpg')
+		img(src='./images/test-bg2.jpg')
+		img(src='./images/test-bg3.jpg')
+		img(src='./images/test-bg4.jpg')
+		img(src='./images/test-bg5.jpg')
+		img(src='./images/test-bg6.jpg')
+		img(src='./images/test-bg7.jpg')

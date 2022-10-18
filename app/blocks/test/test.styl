@@ -1,0 +1,150 @@
+.test
+    position relative
+    background url('/images/test-bg1.jpg') no-repeat center
+    background-size cover
+    padding w(85) w(420) w(125) w(475)
+    width 100%
+    height 100vh
+    +below(768px)
+        padding wm(0) wm(20) wm(0)
+        background-image url('/images/test-bg1-mobile.jpg') 0 0/100% no-repeat
+        width 100%
+        background-size cover
+        height auto
+        min-height 100vh
+
+    &__img
+        position absolute
+        left w(27)
+        bottom w(21)
+        width w(70)
+        height w(70)
+        +below(768px)
+            width wm(48)
+            height wm(52)
+            left wm(8)
+            bottom wm(8)
+
+        img
+            width 100%
+
+    &__wrap
+        display flex
+        flex-flow column
+        align-items stretch
+        justify-content space-between
+        +below(768px)
+            justify-content flex-start
+            padding wm(30) wm(0) wm(60)
+
+    &__head
+        position relative
+        margin-bottom w(40)
+
+    &__counter
+        margin 0 auto
+        display flex
+        flex-flow row nowrap
+        justify-content center
+        align-items center
+        margin-bottom w(50)
+        +below(768px)
+            margin-bottom wm(40)
+
+    &__counter-text
+        position relative
+        font-family $ff-vinque
+        font-style normal
+        font-weight normal
+        font-size w(54)
+        line-height w(56)
+        text-align center
+        color #CF2920
+        +below(768px)
+            font-size wm(20)
+            line-height wm(24)
+
+    &__title
+        font-family $ff-vinque
+        font-style normal
+        font-weight normal
+        font-size w(86)
+        line-height w(72)
+        text-align center
+        color #FF2929
+        +below(768px)
+            font-size wm(26)
+            line-height wm(40)
+
+    &__item
+        position relative
+        padding w(12) w(5) w(12) w(110)
+        margin-bottom w(25)
+        display flex
+        flex-flow row nowrap
+        justify-content flex-start
+        align-items center
+        cursor pointer
+        &:hover 
+            .test__sign
+                background-image url('/images/heart.png')
+                top 30%
+                width w(125)
+                height w(110)
+            
+                +below(768px)
+                    width wm(50)
+                    height wm(50)
+
+
+        &:last-child
+            margin-bottom 0
+
+    &__sign
+        position absolute
+        left 0
+        top 50%
+        transform translateY(-50%)
+        width w(70)
+        height w(70)
+        background url('/images/ellipse.png') no-repeat center
+        background-size 100%
+        margin-right w(35)
+        flex-shrink 0
+        +below(768px)
+            width wm(30)
+            height wm(30)
+
+    &__sign-text
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        font-family $ff-vinque
+        font-size w(26)
+        color white
+        +below(768px)
+            font-size wm(20)
+
+    &__answer
+        padding w(5) w(30)
+        display flex
+        flex-flow row nowrap
+        justify-content flex-start
+        align-items center
+        width 100%
+        +below(768px)
+            padding wm(15) wm(20)
+            border-radius wm(30)
+
+    &__answer-text
+        font-family $ff-vinque
+        font-style normal
+        font-weight normal
+        font-size w(30)
+        line-height w(36)
+        letter-spacing 0.05em
+        color #FFD8AB
+        +below(768px)
+            font-size wm(14)
+            line-height wm(22)

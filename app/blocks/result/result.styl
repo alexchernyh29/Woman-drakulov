@@ -1,0 +1,101 @@
+.result
+    background url('/images/result-bg.jpg') no-repeat center
+    background-size cover
+    position relative
+    padding w(65) w(15) w(15)
+    height 100vh
+    font-family $ff-vinque
+    +below(768px)
+        background-image url('/images/result-bg-mobile.jpg')
+        padding wm(60) wm(30) wm(100)
+        height auto
+        min-height 100vh
+        
+
+    &__title
+        text-align center
+        font-size w(44)
+        line-height w(56)
+        text-transform uppercase
+        color #FFF2E2
+        +below(768px)
+            line-height wm(36)
+            font-size wm(30)
+
+    &__output
+        padding-top w(140)
+        margin 0 auto
+        width 55%
+        text-align center
+        +below(768px)
+            padding-top wm(90)
+            width wm(305)
+       
+            
+
+    &__answer
+        font-size w(50)
+        line-height 1
+        width: 100%
+        color #FF2929
+        +below(768px)
+            font-size wm(24)
+            line-height wm(27)
+
+    &__text
+        padding w(50) w(60) w(0)
+        font-size w(25)
+        line-height w(30)
+        color #550001
+        +below(768px)
+            padding wm(20) wm(0) wm(0)
+            font-size wm(18)
+            line-height wm(21)
+
+    &__text span
+        color #FF2929
+
+    &__img
+        position absolute
+        left w(27)
+        bottom w(21)
+        width w(70)
+        height w(70)
+        +below(768px)
+            width wm(0)
+            height wm(0)
+        
+        img
+            width 100%
+    
+    &__sharing
+        margin-top w(50)
+        +below(768px)
+            margin-top wm(15)
+
+    &__actions
+        text-align center
+        margin-top w(20)
+
+        +below(768px)
+            margin-top wm(10)
+    
+    &__btn
+        font-size w(24)
+        background-color #cf2920
+        color #fff
+        border-radius w(20)
+        padding w(7) w(10) w(10)
+        border 0
+        text-transform lowercase
+        text-decoration none
+        transition color .3s, background-color .3s
+
+        &:hover
+            background-color #fff
+            color #cf2920
+        
+        +below(768px)
+            font-size wm(16)
+            border-radius wm(20)
+            padding wm(7) wm(10) wm(10)

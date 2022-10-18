@@ -1,0 +1,70 @@
+.sharing
+
+    &__title
+        margin-bottom w(15)
+        font-family $ff-vinque
+        font-style normal
+        font-weight normal
+        font-size w(30)
+        line-height w(24)
+        text-align center
+        color #CF2920
+        +below(768px)
+            font-size wm(20)
+            line-height wm(24)
+
+    &__list
+        display flex
+        flex-flow row nowrap
+        justify-content center
+        align-items center
+
+    &__item
+        display inline-block
+        margin-right w(10)
+        position relative
+        width w(50) 
+        height w(50)
+        background #CF2920
+        border-radius 50%
+        transition opacity .3s
+        +below(768px)
+            width wm(25)
+            height wm(25)
+
+        &:hover
+            opacity .7
+    
+        &:last-child
+            margin-right 0
+
+    &__link
+        display inline-block
+        height 100%
+        width 100%
+        border-radius 50%
+
+    &__icon
+        position absolute
+        top: 50%
+        left: 50%
+        transform translate(-50%,-50%)
+
+        &_fb
+            width w(10)
+            +below(768px)
+                width wm(5)
+        &_vk
+            width w(13)
+            +below(768px)
+                width wm(6)
+        
+        &_tw
+            width w(17)
+            +below(768px)
+                width wm(8)
+
+        &_od
+            width w(11)
+            +below(768px)
+                width wm(6)
